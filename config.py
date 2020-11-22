@@ -1,6 +1,5 @@
 import os
 
-
 # Telegram stuff
 TELAGRAM_API_TOKEN = os.environ.get('TELEGRAM-BOT-TOKEN')
 TELAGRAM_API_URL = 'https://api.telegram.org/'
