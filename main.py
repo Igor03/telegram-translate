@@ -19,12 +19,12 @@ if __name__ == '__main__':
                 _message = '{} me mandou uma mensagem'
                 text = update['message']['text']
                 
-                # try: translated_text = loop.run_until_complete(gts.translate(text))    
-                # except: loop.run_until_complete(tsa.send_message(chat_id, 'Muitas palavras', m_id))            
+                try: translated_text = loop.run_until_complete(gts.translate(text))    
+                except: loop.run_until_complete(tsa.send_message(chat_id, 'Muitas palavras', m_id))            
                 
                 print('{} sent a message'.format(_from))
 
-                translated_text = 'Teste'
+                # translated_text = 'Teste'
 
                 loop.run_until_complete(tsa.send_message(chat_id, translated_text, m_id))
 
