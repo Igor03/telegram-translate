@@ -27,7 +27,7 @@ docker build -t ${imagename} .
 
 Então rode localmente, a imagem criada 
 ```
-docker run ${imagename} .
+docker run ${imagename}
 ```
 
 ## Observação
